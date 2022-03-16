@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /* CSS Reset Ends */
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f7e4d4;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: calc(100% / 2);
+    max-width: 1400px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.container h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    text-align: center;
+    color: #467745;
+}
+
+.container #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc((100% / 1.2));
+}
+
+.container #form .subject {
+    width: 480px;
+    height: 64px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #467745;
+}
+
+.container #form .subject::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #467745;
+}
+
+.container #form textarea {
+    display: block;
+    width: 480px;
+    height: 120px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #467745;
+}
+
+.container #form textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #467745;
+}
+
+.container #form .check label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #467745;
+}
+
+.container #form button {
+    position: relative;
+    width: 280px;
+    height: 80px;
+    border-radius: 40px;
+    font-family: 'EB Garamond', serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #f7e4d4;
+    background-color: #467745;
+}
+
+@media (max-width: 520px) {
+    .container h1 {
+        font-size: 36px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .container #form .subject {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
+    .container #form textarea {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
+    .container #form .check {
+        margin-left: 20px;
+    }
+}
